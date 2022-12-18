@@ -1,1 +1,3 @@
-print('hello world')
+import hello as h
+
+print(h.f(1))

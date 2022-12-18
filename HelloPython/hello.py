@@ -131,6 +131,6 @@ def f(x):
     else:
         return
 
-arg = 2
-print(f(arg))
-print(type(f(arg)))
+# arg = 2
+# print(f(arg))
+# print(type(f(arg)))
