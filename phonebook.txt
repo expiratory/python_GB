@@ -1,0 +1,4 @@
+Ivanov,Ivan,Ivanovich,88005553535,
+Semenov,Semen,Semenovich,81234567890,
+Petrov,Petr,Petrovich,80987654321,
+Sidorov,Sidr,Sidorovich,89005551122,
