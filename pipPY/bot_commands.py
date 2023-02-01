@@ -9,7 +9,7 @@ async def hi_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await spy.log(update, context)
-    await update.message.reply_text(f'/hi\n/time\n/help\n/sum')
+    await update.message.reply_text(f'/hi\n/time\n/help\n/sum\n/time2ny')
 
 async def time_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await spy.log(update, context)
@@ -22,3 +22,10 @@ async def sum_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     x = int(items[1])
     y = int(items[2])
     await update.message.reply_text(f'{x} + {y} = {x + y}')
+
+async def time2ny_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await spy.log(update, context)
+    now = dt.datetime.today()
+    NY = dt.datetime(2024,1,1)
+    d = NY - now
+    await update.message.reply_text(f'Дл НГ осталось {d}')
