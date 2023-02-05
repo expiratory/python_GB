@@ -29,3 +29,12 @@ async def time2ny_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     NY = dt.datetime(2024,1,1)
     d = NY - now
     await update.message.reply_text(f'Дл НГ осталось {d}')
+
+async def xo_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await spy.log(update, context)
+    playground = ('7 8 9\n'
+                 +'4 5 6\n'
+                 +'1 2 3\n')
+    p_choise = int(input('Выберите клетку: '))
+    
+    await update.message.reply_text(f'')
